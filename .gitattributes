@@ -1,0 +1,29 @@
+# Default: normalize line endings. Repository stores LF; checkout uses
+# the OS native line ending unless overridden below.
+* text=auto
+
+# Source code — explicitly LF in repo
+*.py     text eol=lf
+*.md     text eol=lf
+*.json   text eol=lf
+*.toml   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.txt    text eol=lf
+
+# Windows-specific files — CRLF (Windows tools expect this)
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+*.iss    text eol=crlf
+*.xml    text eol=crlf
+*.manifest text eol=crlf
+*.spec   text eol=crlf
+
+# Binary files — never normalize
+*.png    binary
+*.jpg    binary
+*.ico    binary
+*.exe    binary
+*.dll    binary
+*.so     binary

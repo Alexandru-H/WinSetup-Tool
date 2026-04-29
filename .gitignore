@@ -1,0 +1,88 @@
+# ============================================================
+# WinSetupV2 — .gitignore
+# ============================================================
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.Python
+.eggs/
+.installed.cfg
+*.manifest
+*.spec.bak
+
+# ----- Virtual environment -----
+.venv/
+venv/
+env/
+ENV/
+
+# ----- PyInstaller build artifacts -----
+# build/ holds intermediate compilation, dist/ holds final output.
+# Both are large, regenerable, and not source.
+build/
+dist/
+*.toc
+*.pkg
+*.pyz
+
+# ----- IDE / editor -----
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+
+# ----- Claude Code local config (user-specific, not project) -----
+.claude/settings.local.json
+.claude/todos/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Keep useful workspace configs (tasks, extensions recommendations)
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# ----- Logs & runtime data -----
+*.log
+logs/
+*.log.*
+winsetup.log
+uninstall_history.log
+
+# ----- App user data -----
+# These get written by the app at runtime — never commit them.
+config/settings.json
+.config/
+*.ini
+*.cfg
+
+# ----- Inno Setup output / temp -----
+# .iss source IS committed; only compiled artifacts are excluded.
+*.exe.bak
+Output/
+
+# ----- Coverage / test artifacts -----
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# ----- OS junk -----
+desktop.ini
+$RECYCLE.BIN/
+
+# ----- Backup files -----
+*.bak
+*.tmp
+*.old
+*~

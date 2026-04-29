@@ -1,0 +1,10 @@
+# WinSetup Tool v2 — runtime + build dependencies
+# Python 3.14
+
+# --- Runtime ---
+PySide6==6.8.1.1
+psutil==6.1.1
+pywinstyles==1.8
+
+# --- Build (dev only) ---
+pyinstaller==6.11.1
