@@ -86,3 +86,11 @@ $RECYCLE.BIN/
 *.tmp
 *.old
 *~
+# ----- Internal planning / Claude Code workspace -----
+# These stay local — they contain dev notes, AI worktrees, internal context
+.claude/
+HANDOFF.md
+
+# ----- Debug output files (root-level dev artifacts) -----
+debug_output.txt
+debug_*.txt
